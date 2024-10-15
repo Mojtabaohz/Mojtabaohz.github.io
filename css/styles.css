@@ -86,3 +86,13 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+/* Ensuring all images are the same size */
+img {
+    width: 100%;  /* Scale to container width */
+    max-width: 300px;  /* Set a maximum width for desktop */
+    height: auto;  /* Maintain aspect ratio */
+    border-radius: 5px;  /* Optional: rounded corners */
+    object-fit: cover;  /* Ensure images fill the container */
+}
+
