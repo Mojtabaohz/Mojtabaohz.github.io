@@ -25,7 +25,7 @@ header {
     margin-bottom: 20px;
 }
 
-.unity-developer {
+.game-developer {
     color: #3498db;
     /* Unity Developer text color */
 }
@@ -35,14 +35,35 @@ header {
     /* Game Designer text color */
 }
 
+.developer-bg-color {
+    background-color: #3498db;
+}
+
+.developer-border-color {
+    border-color: #3498db;
+    border: 2px solid #3498db;
+}
+
+.designer-bg-color {
+    background-color: #e67e22;
+}
+
+.designer-border-color {
+    border-color: #e67e22;
+    border: 2px solid #e67e22;
+}
+
 /* Timeline lines */
 
 .timeline {
-    width: 10%;
+    width: 1px;
+    /* Reduced the width */
+    background-color: #3498db;
     position: relative;
+    height: 100%;
     margin-right: 20px;
-    opacity: 0;
-    animation: fadeIn 2s forwards;
+    animation: drawLine 2s ease-in-out;
+    /* Reduce margin to ensure enough space */
 }
 
 .line {
@@ -62,29 +83,68 @@ header {
 .bullet-point {
     width: 12px;
     height: 12px;
-    background-color: #fff;
     border-radius: 50%;
     position: absolute;
     left: -5px;
     /* Positioning on the line */
     cursor: pointer;
     transition: transform 0.3s;
+    /* Animation */
+    animation: fadeIn 0.5s ease-in-out forwards;
+    opacity: 0;
 }
 
+/* Tooltip container */
 /* Tooltip */
-.bullet-point:hover::after {
-    content: attr(data-tooltip);
-    /* Tooltip text */
+.tooltip {
+    display: none;
     position: absolute;
-    top: -10px;
-    left: 20px;
-    background-color: rgba(255, 255, 255, 0.9);
-    color: #333;
-    padding: 5px;
-    font-size: 12px;
-    border-radius: 5px;
-    white-space: nowrap;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 6px;
+    top: 50%;
+    /* Align vertically with bullet */
+    left: 120%;
+    /* Position right of the bullet */
+    transform: translateY(-50%);
+    font-size: 14px;
+    min-width: 150px;
+    /* Minimum width */
+    max-width: 350px;
+    /* Allow larger width */
+    white-space: normal;
+    word-wrap: break-word;
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
 }
+
+/* Tooltip arrow */
+.tooltip::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -7px;
+    /* Arrow on the left */
+    margin-top: -7px;
+    border-width: 7px;
+    border-style: solid;
+    border-color: transparent #333 transparent transparent;
+}
+
+/* Show tooltip when visible */
+.bullet-point:hover .tooltip {
+    display: block;
+    opacity: 1;
+}
+
+/* Mobile click toggle for tooltip */
+.bullet-point:active .tooltip {
+    display: block;
+    opacity: 1;
+}
+
 
 /* Project boxes */
 .project-box {
@@ -124,19 +184,25 @@ header {
     padding-top: 30px;
 }
 
-
-@keyframes fadeIn {
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes draw-line {
+@keyframes drawLine {
     from {
         height: 0;
     }
 
     to {
         height: 100%;
+    }
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
     }
 }

@@ -1,21 +1,21 @@
 document.addEventListener('DOMContentLoaded', function () {
-    // Tooltip hover for desktop
-    const bulletPoints = document.querySelectorAll('.bullet-point');
-  
-    bulletPoints.forEach(point => {
+  // Tooltip hover for desktop
+  const bulletPoints = document.querySelectorAll('.bullet-point');
+
+  bulletPoints.forEach(point => {
+      const tooltip = point.querySelector('.tooltip');
+
       point.addEventListener('mouseenter', function () {
-        this.querySelector('.tooltip').style.display = 'block';
+          tooltip.style.display = 'block';
       });
-  
+
       point.addEventListener('mouseleave', function () {
-        this.querySelector('.tooltip').style.display = 'none';
+          tooltip.style.display = 'none';
       });
-  
+
       // Click for mobile
       point.addEventListener('click', function () {
-        const tooltip = this.querySelector('.tooltip');
-        tooltip.style.display = tooltip.style.display === 'block' ? 'none' : 'block';
+          tooltip.style.display = tooltip.style.display === 'block' ? 'none' : 'block';
       });
-    });
   });
-  
+});
