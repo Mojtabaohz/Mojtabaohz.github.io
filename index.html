@@ -1,77 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Timeline</title>
+    <title>Mojtaba Ostad - Portfolio</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
-
 <body>
-    <header>
-        <h1>My Portfolio</h1>
-        <div class="roles">
-            <span class="role game-developer">Game Developer</span>
-            <span class="role game-designer">Game Designer</span>
-        </div>
-        <div class="contact-info">
-            <p>Email: example@example.com</p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/example" target="_blank">LinkedIn Profile</a></p>
-        </div>
+    <!-- Header -->
+    <header class="header">
+        <h1>Mojtaba Ostad</h1>
+        <h2>Game Designer & Developer</h2>
+        <nav class="nav">
+            <a href="#projects">Projects</a>
+            <a href="#tools">Tools</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
     </header>
 
-    <div class="timeline-container">
-        <!-- Unity Developer Timeline -->
-        <div class="timeline">
-            <div class="role-title game-developer">Game Developer</div>
-            <div class="line game-developer-line">
-                <div class="bullet-point developer-bg-color" style="top: 20%;">
-                    <div class="tooltip developer-border-color">Developed core gameplay mechanics.</div>
-                </div>
-                <div class="bullet-point developer-bg-color" style="top: 50%;">
-                    <div class="tooltip developer-border-color">Optimized performance.</div>
-                </div>
-            </div>
-        </div>
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <h2>Projects</h2>
 
-        <!-- Game Designer Timeline -->
-        <div class="timeline">
-            <div class="role-title game-designer">Game Designer</div>
-            <div class="line game-designer-line">
-                <div class="bullet-point designer-bg-color" style="top: 30%;">
-                    <div class="tooltip designer-border-color">Designed player progression system. Designed player
-                        progression system.Designed player progression system.Designed player progression
-                        system.Designed player progression system.Designed player progression system.</div>
-                </div>
-                <div class="bullet-point designer-bg-color" style="top: 60%;">
-                    <div class="tooltip designer-border-color">Created level design layouts.</div>
+        <!-- Repeat for more projects -->
+        <div class="project-grid">
+            <div class="project">
+                <img src="images/Wintor-logo.jpg" alt="Wintor Logo">
+                <div class="project-info">
+                    <h3>Wintor</h3>
+                    <h5>2022 - present</h5>
+                    <p>Wintor is an augmented reality platform designed to bridge the gap between physical and virtual experiences. As a key contributor to this project, I worked on designing and optimizing AR tours, focusing on user-centric features and seamless cross-platform functionality. My role involved enhancing the app’s code infrastructure, integrating advanced AR/VR libraries, and ensuring consistent performance across mobile and web platforms. By actively observing user behavior on-site, I reshaped features, improved the UI/UX, and contributed to creating engaging, easy-to-use AR content. Wintor exemplifies my passion for immersive technologies and innovation in storytelling.</p>
+                    <a href="https://www.wintor.com/">Learn More</a>
                 </div>
             </div>
         </div>
 
-        <!-- Projects -->
-        <div class="projects-timeline">
-            <div class="project-box">
-                <h3>Project 1: Game Title</h3>
-                <img src="images/wintor-ar.png" alt="Project Image">
-                <p>This is a short description of the first project. Focused on Unity Development and Game Design.</p>
-            </div>
-
-            <div class="project-box">
-                <h3>Project 2: Game Title</h3>
-                <img src="images/northern-farm-simulator.png" alt="Project Image">
-                <p>Description of the second project. This was a Unity Development-heavy project.</p>
-            </div>
-
-            <div class="project-box">
-                <h3>Project 3: Game Title</h3>
-                <img src="images/com.ZorvanGameStudio.Tactics.png" alt="Project Image">
-                <p>Description of the second project. This was a Unity Development-heavy project.</p>
+        <!-- Repeat for more projects -->
+        <div class="project-grid">
+            <div class="project">
+                <img src="images/MAGRID-LOGO-2x-1.webp" alt="Magrid Logo">
+                <div class="project-info">
+                    <h3>Magrid</h3>
+                    <h5>2021 - 2022</h5>
+                    <p>Magrid is an educational mobile app that empowers young learners with its innovative approach to visual learning. As the lead mobile developer, I spearheaded the development and optimization of the app on Unity, ensuring its availability across multiple platforms including iOS and Android. Magrid is now used in over five countries and more than 400 schools, positively impacting the education of thousands of students. My contributions included developing user-friendly features, managing app store deployments, and integrating cross-platform solutions to enhance accessibility and engagement. Magrid stands as a testament to my ability to create impactful, scalable applications that make a difference.</p>
+                    <a href="https://magrid.education/">Learn More</a>
+                </div>
             </div>
         </div>
-    </div>
-    <script src="js/main.js"></script>
+
+        <!-- Repeat for more projects -->
+        <div class="project-grid">
+            <div class="project">
+                <img src="images/northern-farm-simulator.png" alt="northern-farm-simulator Logo">
+                <div class="project-info">
+                    <h3>Northern Farm</h3>
+                    <h5>2017-2019</h5>
+                    <p>Northern Farm was a unique farming simulation game with a distinctive Persian theme, featuring localized items, ingredients, and engaging mini-games. The project included the development of social features, such as clans and item trading, as well as special themed live events to enhance player engagement and retention.
+
+                        As part of the design and development team, I focused on improving key performance indicators (KPIs) and revenue through data-driven strategies. These included implementing A/B tests, analyzing player behavior, and introducing features to optimize the game’s lifecycle and maximize player satisfaction.
+                        
+                        Though no longer available, Northern Farm remains a highlight of my career as it combined cultural elements with innovative gameplay, leaving a lasting impression on its audience.</p>
+                    <a href="https://www.instagram.com/northernfarm_game?igsh=NGFpNDI0cGx4cjIy">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Repeat for more projects -->
+        <div class="project-grid">
+            <div class="project">
+                <img src="images/com.ZorvanGameStudio.Tactics.png" alt="tactics image">
+                <div class="project-info">
+                    <h3>Tactics</h3>
+                    <h5>2017 - 2019</h5>
+                    <p>Tactics was an innovative freemium mobile strategy game that blended elements of collectible card games and base defense strategy. Players could strategically build and customize their defenses while assembling decks of troops and buff cards to launch attacks on other players or progress through challenging campaign levels.
+
+                        As part of the development process, I contributed to crafting a gameplay experience that balanced strategic depth with accessibility, ensuring player engagement through a combination of tactical decision-making and progression mechanics. Although the project was ultimately unreleased, it demonstrated a novel approach to combining two popular genres and remains a valuable learning experience in designing unique and engaging player experiences.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Repeat for more projects -->
+        <div class="project">
+            <img src="images/chatrun_0.png" alt="chatRun Logo">
+            <div class="project-info">
+                <h3>ChatRun</h3>
+                <h5>2017</h5>
+                <p>We make "chatRun", an endless 2D runner theme game with new rules and mechanichs! However we just put it on hold after ggj.
+                    Great exprience and great invention in just 3days event.</p>
+                <a href="https://v3.globalgamejam.org/2017/games/chatrun">Learn More</a>
+            </div>
+        </div>
+
+        <!-- Repeat for more projects -->
+        <div class="project">
+            <img src="images/GlassGarden.png" alt="GlassGarden Logo">
+            <div class="project-info">
+                <h3>Glass Garden</h3>
+                <h5>2017</h5>
+                <p>Glass Garden wins third position during the SABA event in Iran.
+                    Glass Garden was a farming management game in which you plant and maintain different kinds of flowers.
+                    Using the application you can virtually grow different plants and learn how to satisfy the different needs of each plant. 
+                    Controlling different attributes like the amount of sunlight or water and airflow requirements for each plant.
+                    The goal of the application was to help people to keep their plant needs on watch and maintain their plant as best using the application guidance.</p>
+            </div>
+        </div>
+
+        <!-- Repeat for more projects -->
+        <div class="project-grid">
+            <div class="project">
+                <img src="images/" alt="Success image">
+                <div class="project-info">
+                    <h3>Success</h3>
+                    <h5>2015-2016</h5>
+                    <p>Success was one of my first multiplayer designs. We make a multiplayer role-playing token game. In this game, each player got a role and need to compete with other players on each round to win. players got different goals based on their roles and different abilities to use in each round. Working with huge amount of data and game balance was one of the most enjoyable challenges for me in this project.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools Section -->
+    <section id="tools" class="section">
+        <h2>Tools & Skills</h2>
+        <div class="tool-list">
+            <div class="tool-category">
+                <h3>Development Tools</h3>
+                <p>Unity, Git, .NET</p>
+            </div>
+            <div class="tool-category">
+                <h3>Design Tools</h3>
+                <p>Figma, Machinations</p>
+            </div>
+            <div class="tool-category">
+                <h3>Skills</h3>
+                <p>Game Economy Design, Data Analysis, Live Ops Management</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <img src="images/moji.jpg" alt="Moji Photo">
+            <p>I am a passionate game designer and Unity developer with over seven years of experience in the gaming and technology industry. My journey has been defined by a blend of technical expertise, creativity, and a relentless curiosity for understanding user behavior. From leading the design of engaging game economies to crafting immersive augmented reality applications, I thrive at the intersection of innovation and player-centric design.
+
+                I am deeply committed to mentoring and community building, demonstrated through my active role as a board member for the Groningen Global Game Jam and years of mentoring aspiring developers. My collaborative spirit and dedication to data-driven solutions have allowed me to enhance user experiences, optimize KPIs, and drive the success of numerous projects. Whether it’s developing AR tours, improving live game services, or exploring innovative gameplay mechanics, I approach every challenge with enthusiasm and a focus on delivering meaningful experiences.
+                
+                Outside of work, I enjoy analyzing complex game systems, hosting local game nights, and immersing myself in strategic and simulation games that fuel my creativity. I am always eager to connect, learn, and contribute to projects that push the boundaries of interactive technology.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2>Contact</h2>
+        <div class="contact-info">
+            <p>Email: <a href="mailto:moji.ostad@gmail.com">moji.ostad@gmail.com</a></p>
+            <p>
+                <a href="https://www.linkedin.com/in/mojiohz/">LinkedIn</a>
+            </p>
+        </div>
+        <div class="schedule">
+            <iframe src="https://calendly.com/moji-ostad/collaborate-with-moji" width="100%" height="400"></iframe>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2024 Moji Ostad. All rights reserved.</p>
+    </footer>
 </body>
-
 </html>
